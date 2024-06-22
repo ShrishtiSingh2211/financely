@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 import './App.css';
+import Dashboard from './Pages/Dashboard';
+import Signup from './Pages/Signup';
+
+
+import { BrowserRouter as Router , Routes ,Route } from 'react-router-dom';
+
 
 function App() {
+  console.log("HELLO FIRST MEN >>>" ,{ToastContainer})   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <ToastContainer />
+       <Router>    
+          <Routes>
+            <Route path='/' element = {<Signup />} />
+            <Route path='/dashboard' element = {<Dashboard />} />
+          </Routes>
+        </Router>
+   
     </div>
   );
 }

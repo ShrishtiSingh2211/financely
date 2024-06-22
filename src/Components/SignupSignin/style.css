@@ -1,0 +1,36 @@
+.signup-wrapper{
+    width: 70%;
+    max-width: 450px;
+    height: auto;
+    box-shadow: var(--shadow-color);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+}
+
+.title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+         
+}
+/* style={{ textAlign: "center", margin: 0 }}
+style={{ textAlign: "center", margin: 0 }} */
+.p-login{
+   text-align: center;
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.8rem; 
+}
+.blue{
+    color: blue;
+    cursor: pointer;
+    /* font-weight: rem; */
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.blue:hover{
+    color: blue;
+    font-weight:900;
+    
+}

@@ -1,0 +1,31 @@
+.charts-wrapper{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 2rem;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.line-chart{
+    box-shadow: var(--shadow-color);
+    width: 60%;
+    padding: 1rem 2rem;
+    margin-left: 4rem;
+    margin: auto;
+}
+.line-chart h2{
+    text-align: center;
+}
+
+.pie-chart{
+    box-shadow: var(--shadow-color);
+    width: 40%;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+.pie-chart h2{
+    text-align: center;
+}
